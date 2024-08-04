@@ -1,0 +1,37 @@
+/home/desmond/.nvm/versions/node/v20.14.0/lib/node_modules/ts-node/src/index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+functions.ts(42,13): error TS2448: Block-scoped variable 'Date' used before its declaration.
+functions.ts(46,23): error TS2552: Cannot find name 'date'. Did you mean 'Date'?
+functions.ts(46,29): error TS18004: No value exists in scope for the shorthand property 'weather'. Either declare one or provide an initializer.
+functions.ts(46,49): error TS7031: Binding element 'Date' implicitly has an 'any' type.
+functions.ts(46,64): error TS7031: Binding element 'string' implicitly has an 'any' type.
+functions.ts(47,15): error TS2552: Cannot find name 'date'. Did you mean 'Date'?
+functions.ts(48,15): error TS2304: Cannot find name 'weather'.
+functions.ts(53,1): error TS2349: This expression is not callable.
+  Type '{ date: any; weather: any; }' has no call signatures.
+functions.ts(46,39): error TS1005: ',' expected.
+functions.ts(46,72): error TS1005: ',' expected.
+functions.ts(46,73): error TS1134: Variable declaration expected.
+functions.ts(46,75): error TS1389: 'void' is not allowed as a variable declaration name.
+functions.ts(46,80): error TS1109: Expression expected.
+
+    at createTSError (/home/desmond/.nvm/versions/node/v20.14.0/lib/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/home/desmond/.nvm/versions/node/v20.14.0/lib/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/home/desmond/.nvm/versions/node/v20.14.0/lib/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/home/desmond/.nvm/versions/node/v20.14.0/lib/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/home/desmond/.nvm/versions/node/v20.14.0/lib/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Object.require.extensions.<computed> [as .ts] (/home/desmond/.nvm/versions/node/v20.14.0/lib/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12) {
+  diagnosticCodes: [
+    2448, 2552, 18004,
+    7031, 7031,  2552,
+    2304, 2349,  1005,
+    1005, 1134,  1389,
+    1109
+  ]
+}
